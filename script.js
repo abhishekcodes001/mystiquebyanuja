@@ -2,7 +2,7 @@ let cartCount = 0;
 let totalPrice = 0;
 
 function addToCart(productName, price){
-
+    document.querySelector(".cart-box").style.display = "block";
     cartCount++;
     totalPrice = totalPrice + price;
 
@@ -24,8 +24,17 @@ function removeItem(button, price){
     button.parentElement.remove();
 
     cartCount--;
+
     totalPrice = totalPrice - price;
 
     document.getElementById("cart-count").innerText = cartCount;
+
     document.getElementById("total-price").innerText = totalPrice;
+
+    if(cartCount === 0){
+
+        document.querySelector(".cart-box").style.display = "none";
+
+    }
+
 }

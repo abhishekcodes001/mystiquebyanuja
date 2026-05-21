@@ -232,6 +232,13 @@ footer p{
     color: white;
     font-size: 16px;
 }
+footer p:last-child{
+
+    font-size: 14px;
+
+    opacity: 0.7;
+
+}
 .cart-icon{
 
     font-weight: bold;
@@ -240,6 +247,7 @@ footer p{
 
 }
 .cart-box{
+    display: none;
 
     background-color: white;
 
