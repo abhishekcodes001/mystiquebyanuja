@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>MystiqueByAnuja</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<nav>
+
+    <div class="logo">
+        Mystique
+    </div>
+
+    <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="cart-icon">
+
+    🛒 Cart:
+    
+    <span id="cart-count">0</span>
+
+</li>
+
+    </ul>
+
+</nav>
+<div class="cart-box">
+
+    <h2>Your Cart</h2>
+
+    <ul id="cart-items">
+
+    </ul>
+ <h3>Total: ₹<span id="total-price">0</span></h3>
+
+
+</div>
+    <header>
+
+        <div class="hero-content">
+
+    <div class="hero-text">
+
+        <h1>MystiqueByAnuja</h1>
+
+        <p>Beauty That Speaks</p>
+
+        <button>Shop Now</button>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="images/rosegel.png">
+
+    </div>
+
+</div>
+
+    </header>
+    
+    <section class="products" id="products">
+    <h2>Our Best Sellers</h2> 
+        <div class="product-container">
+
+    <div class="card">
+        <img src="images/rosegel.png">
+
+        <h3>Romalicious Rose Gel</h3>
+
+        <p>Hydrating rose skincare gel</p>
+
+        <button onclick="addToCart('Romalicious Rose Gel',499)">
+
+    Add to Cart
+
+</button>
+
+    </div>
+
+    <div class="card">
+     <img src="images/mist.png">
+        <h3>Chamomile Face Mist</h3>
+
+        <p>Fresh calming skin mist</p>
+
+        <button onclick="addToCart('Chamomile Face Mist',399)">
+
+    Add to Cart
+
+</button>
+
+    </div>
+
+    <div class="card">
+<img src="images/moisturiser.png">
+        <h3>Pearl Aura Moisturiser</h3>
+
+        <p>Glow boosting pearl moisturiser</p>
+
+        <button onclick="addToCart('Pearl Aura Moisturiser',599)">
+
+    Add to Cart
+
+</button>
+
+    </div>
+
+</div>
+
+</section>
+<section class="about" id="about">
+
+    <h2>About MystiqueByAnuja</h2>
+
+    <p>
+        MystiqueByAnuja creates handmade skincare products with love,
+        care, and skin-friendly ingredients. Our products are designed
+        to make your skin feel fresh, soft, and naturally glowing.
+    </p>
+
+</section>
+<section class="contact" id="contact">
+
+    <h2>Order on WhatsApp</h2>
+
+    <p>Love our products? Message us directly to place your order.</p>
+
+    <a class="whatsapp-button" href="https://wa.me/919711477800" target="_blank">
+        Message on WhatsApp
+    </a>
+
+</section>
+<footer>
+
+    <p>© 2026 MystiqueByAnuja. All rights reserved.</p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
